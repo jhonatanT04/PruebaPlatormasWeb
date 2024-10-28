@@ -1,0 +1,25 @@
+
+<section id="agregarNuevoCurso">
+    <div class="form-container">
+        <h2>Agregar Nuevo Operacion</h2>
+        <form id="nuevoCursoForm">
+            <label for="nombreCurso">numero 1 :</label>
+            <input type="text" id="nombreCurso" name="nombreCurso" 
+            required placeholder="numero 1"
+                    [(ngModel)]="num1">
+
+            <label for="nombreCurso">numero 2 : </label>
+            <input type="text" 
+            required placeholder="numero 2"
+                    [(ngModel)]="num2">
+            <label for="nombreCurso">operacion :</label>
+            
+            <input type="text" id="nombreCurso" name="nombreCurso" 
+            required placeholder="+,-,*,/"
+                    [(ngModel)]="ope">
+            <button type="submit" class="btn-submit" id="bnt-subir"
+                (click)="newOperacion(num1, num2, ope) ">Realizar operacion</button>
+            <label for="">Resultado {{resultado}}</label>    
+        </form>
+    </div>
+</section>
