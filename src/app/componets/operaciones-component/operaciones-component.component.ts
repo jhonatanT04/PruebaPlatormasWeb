@@ -19,16 +19,16 @@ export class OperacionesComponentComponent {
   
   newOperacion(num1:number,num2:number,ope:string){
     console.log(ope)
-    if(this.ope='+'){
+    if(this.ope=='+'){
       this.resultado=this.servicioOpe.sum(this.num1,this.num2)
       this.limpiarCampos
-    }else if(this.ope='-'){
+    }else if(this.ope=='-'){
       this.resultado=this.servicioOpe.rest(this.num1,this.num2)
       this.limpiarCampos
-    }else if(this.ope='*'){
+    }else if(this.ope=='*'){
       this.resultado=this.servicioOpe.multip(this.num1,this.num2)
       this.limpiarCampos
-    }else if(this.ope='/'){
+    }else if(this.ope=='/'){
       this.resultado=this.servicioOpe.divis(this.num1,this.num2)
       this.limpiarCampos
     }else{
